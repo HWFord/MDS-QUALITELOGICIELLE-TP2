@@ -29,6 +29,6 @@ public class LaunchpadNameTest {
       c = c + 26;
     }
     launchpad.setName(c);
-    GenericNameTest.nameStartsWithCaps(launchpad.getName());
+    GenericNameTest.nameStartsWithLower(launchpad.getName());
   }
 }

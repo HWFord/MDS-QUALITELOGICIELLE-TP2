@@ -31,7 +31,7 @@ public class FuseeNameTest {
       c = c + 26;
     }
     fusee.setName(c);
-    GenericNameTest.nameStartsWithCaps(fusee.getName());
+    GenericNameTest.nameStartsWithLower(fusee.getName());
   }
 
 

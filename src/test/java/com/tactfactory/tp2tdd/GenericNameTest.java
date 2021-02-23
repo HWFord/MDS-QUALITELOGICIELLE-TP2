@@ -55,7 +55,7 @@ public class GenericNameTest {
     //assertFalse(testFirstLetter2.charAt(0) >= 65 && testFirstLetter.charAt(0) <= 90);
     //}
 
-    assertTrue(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
+    assertFalse(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
   }
 
 

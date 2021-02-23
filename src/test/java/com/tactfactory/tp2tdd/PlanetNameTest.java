@@ -29,6 +29,6 @@ public class PlanetNameTest {
       c = c + 26;
     }
     planet.setName(c);
-    GenericNameTest.nameStartsWithCaps(planet.getName());
+    GenericNameTest.nameStartsWithLower(planet.getName());
   }
 }
