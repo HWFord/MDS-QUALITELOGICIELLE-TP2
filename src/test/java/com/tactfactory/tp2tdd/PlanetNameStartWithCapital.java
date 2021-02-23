@@ -5,11 +5,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.tactfactory.tp2tdd.models.Fusee;
 import com.tactfactory.tp2tdd.models.Planet;
-import com.tactfactory.tp2tdd.utils.GenericNameTest;
+import com.tactfactory.tp2tdd.utils.GenericNameEndsInLowerCase;
+import com.tactfactory.tp2tdd.utils.GenericNameStartWithCapital;
 import com.tactfactory.tp2tdd.utils.StringUtils;
 import org.junit.jupiter.api.Test;
 
-public class PlanetNameTest {
+public class PlanetNameStartWithCapital {
 
   /**
    * testNameStartWithMajOk test function.
@@ -20,7 +21,7 @@ public class PlanetNameTest {
   public void nameStartsWithCaps() throws Exception {
     Planet planet = new Planet();
     planet.setName("AaaaA");
-    GenericNameTest.nameStartsWithCaps(planet.getName());
+    GenericNameStartWithCapital.nameStartsWithCaps(planet.getName());
   }
 
   /**
@@ -32,7 +33,7 @@ public class PlanetNameTest {
   public void testNameStartWithMajKo() throws Exception {
 	Planet planet = new Planet();
     planet.setName("aAAAa");
-    GenericNameTest.nameStartsWithCaps(planet.getName());
+    GenericNameStartWithCapital.nameStartsWithCaps(planet.getName());
   }
 
   /**
@@ -66,7 +67,7 @@ public class PlanetNameTest {
   public void testNameStartWithMajOneChar() throws Exception {
 	Planet planet = new Planet();
     planet.setName("a");
-    GenericNameTest.nameStartsWithCaps(planet.getName());
+    GenericNameStartWithCapital.nameStartsWithCaps(planet.getName());
   }
 
   /**
@@ -126,57 +127,10 @@ public class PlanetNameTest {
   public void testNameStartWithMajRandom() throws Exception {
 	Planet planet = new Planet();
     planet.setName(StringUtils.getRandomString());
-    GenericNameTest.nameStartsWithCaps(planet.getName());
+    GenericNameStartWithCapital.nameStartsWithCaps(planet.getName());
   }
 
-  /**
-   * testNameLowerCaseAaaA test function.
-   *
-   * @throws Exception to throw
-   */
-  @Test
-  public void testNameLowerCaseAaaA() throws Exception {
-    Planet planet = new Planet();
-    planet.setName("AaaaA");
-    GenericNameTest.nameEndsWithLowerCase(planet.getName());
-    assertTrue(planet.getName().equals("Aaaaa"));
-  }
 
-  /**
-   * testNameLowerCaseAAAA test function.
-   *
-   * @throws Exception to throw
-   */
-  @Test
-  public void testNameLowerCaseAAAA() throws Exception {
-    Planet planet = new Planet();
-    planet.setName("AAAAA");
-    assertTrue(planet.getName().equals("Aaaaa"));
-  }
-
-  /**
-   * testNameLowerCaseAAAA test function.
-   *
-   * @throws Exception to throw
-   */
-  @Test
-  public void testNameLowerCaseAa() throws Exception {
-    Planet planet = new Planet();
-    planet.setName("Aa");
-    GenericNameTest.nameEndsWithLowerCase(planet.getName());
-  }
-
-  /**
-   * testNameNameLowerCaseRandom test function.
-   *
-   * @throws Exception to throw
-   */
-  @Test
-  public void testNameNameLowerCaseRandom() throws Exception {
-	Planet planet = new Planet();
-    planet.setName(StringUtils.getRandomString());
-    GenericNameTest.nameEndsWithLowerCase(planet.getName());
-  }
 
 
 

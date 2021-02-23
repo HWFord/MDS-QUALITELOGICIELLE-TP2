@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class GenericNameTest {
+public class GenericNameStartWithCapital {
 
   /*
    * Test rocket has a name
@@ -35,13 +35,13 @@ public class GenericNameTest {
     assertTrue(testFirstLetter.charAt(0) >= 65 && testFirstLetter.charAt(0) <= 90);
   }
 
-  /**
-   *Name starts with lower case
-   *return false
-   *test if first letter is a lower case
-   *between 32-64 and 91-126 on ASCI table
-   *
-   */
+//  /**
+//   *Name starts with lower case
+//   *return false
+//   *test if first letter is a lower case
+//   *between 32-64 and 91-126 on ASCI table
+//   *
+//   */
 
 //  public static void nameStartsWithLower(String testFirstLetter) {
 
@@ -58,13 +58,5 @@ public class GenericNameTest {
 //    assertTrue(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
 //  }
 
-  public static void nameEndsWithLowerCase(String testName) {
-	  boolean allLettersLowerCase = false;
-	  for (int i = 0; i < testName.length(); i++) {
-		  if(testName.charAt(i) < 65 && testName.charAt(i) > 90) {
-			  allLettersLowerCase = true;
-		  }
-	  }
-	  assertTrue(allLettersLowerCase == true);
-  }
+
 }
