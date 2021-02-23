@@ -58,5 +58,13 @@ public class GenericNameTest {
 //    assertTrue(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
 //  }
 
-
+  public static void nameEndsWithLowerCase(String testName) {
+	  boolean allLettersLowerCase = false;
+	  for (int i = 0; i < testName.length(); i++) {
+		  if(testName.charAt(i) < 65 && testName.charAt(i) > 90) {
+			  allLettersLowerCase = true;
+		  }
+	  }
+	  assertTrue(allLettersLowerCase == true);
+  }
 }
