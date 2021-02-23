@@ -6,6 +6,8 @@ public class GenericNameAllowsHyphen {
 
 	public static void nameHasHyphen(String testName) {
 		  boolean allowsHypen = true;
+		  System.out.println(testName);
+		  System.out.println(allows);
 		  for (int i = 1; i < testName.length(); i++) {
 			  if(testName.charAt(i) <= 47
 					  || testName.charAt(i) >= 58 && testName.charAt(i) <= 64
