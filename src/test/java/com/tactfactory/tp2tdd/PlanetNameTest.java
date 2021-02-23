@@ -88,7 +88,7 @@ public class PlanetNameTest {
    */
   @Test
   public void testNameStartWithMajOneCharWithA() throws Exception {
-	Planet planet = new Planet();
+    Planet planet = new Planet();
     planet.setName("A");
     assertTrue(planet.getName().equals("A"));
   }
@@ -100,7 +100,7 @@ public class PlanetNameTest {
    */
   @Test
   public void testNameStartWithMajOneCharWithabcdef() throws Exception {
-	Planet planet = new Planet();
+    Planet planet = new Planet();
     planet.setName("abcdef");
     assertTrue(planet.getName().equals("Abcdef"));
   }
@@ -128,5 +128,19 @@ public class PlanetNameTest {
     planet.setName(StringUtils.getRandomString());
     GenericNameTest.nameStartsWithCaps(planet.getName());
   }
+
+  /**
+   * testNameLowerCase test function.
+   *
+   * @throws Exception to throw
+   */
+  @Test
+  public void testNameLowerCase() throws Exception {
+    Planet planet = new Planet();
+    planet.setName("AaaaA");
+    GenericNameTest.nameEndsWithLowerCase(planet.getName());
+  }
+
+
 }
 
