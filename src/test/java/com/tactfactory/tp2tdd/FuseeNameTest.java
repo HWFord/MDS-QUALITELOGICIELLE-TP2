@@ -13,7 +13,7 @@ public class FuseeNameTest {
    */
   @Test
     public void testNameStartWithCapsOk() {
-      Fusee fusee = new fusee();
+      Fusee fusee = new Fusee();
       fusee.setName(Character.toString((rand.nextInt(26) + 65) % 91 ));
       GenericNameTest.nameStartsWithCaps(testFirstLetter);
     }
@@ -23,7 +23,7 @@ public class FuseeNameTest {
    */
   @Test
   public void testNameStartWithCapsKo() {
-    Fusee fusee = new fusee();
+    Fusee fusee = new Fusee();
     String c = Character.toString(rand.nextInt(126 - 32) + 32)
     		if((char)c.charAt(0) >= 65 && (char)c.charAt(0) <= 90) {
     			c = c+26;
