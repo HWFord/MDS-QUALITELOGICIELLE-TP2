@@ -1,4 +1,4 @@
-package com.tactfactory.tp2tdd;
+package com.tactfactory.tp2tdd.utils;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -43,7 +43,7 @@ public class GenericNameTest {
    *
    */
 
-  public static void nameStartsWithLower(String testFirstLetter) {
+//  public static void nameStartsWithLower(String testFirstLetter) {
 
     //for (int i = 32; i <= 64; i++) {
     //  String testFirstLetter1 = Character.toString(i);
@@ -55,8 +55,8 @@ public class GenericNameTest {
     //assertFalse(testFirstLetter2.charAt(0) >= 65 && testFirstLetter.charAt(0) <= 90);
     //}
 
-    assertFalse(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
-  }
+//    assertTrue(testFirstLetter.charAt(0) < 65 && testFirstLetter.charAt(0) > 90);
+//  }
 
 
 }

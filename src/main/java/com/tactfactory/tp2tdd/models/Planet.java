@@ -1,6 +1,6 @@
-package com.tactfactory.tp2tdd;
+package com.tactfactory.tp2tdd.models;
 
-public class Launchpad {
+public class Planet {
   String name;
 
   public String getName() {
@@ -10,4 +10,5 @@ public class Launchpad {
   public void setName(String name) {
     this.name = name;
   }
+
 }

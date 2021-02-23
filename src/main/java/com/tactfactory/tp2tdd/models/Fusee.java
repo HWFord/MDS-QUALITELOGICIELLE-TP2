@@ -1,6 +1,6 @@
-package com.tactfactory.tp2tdd;
+package com.tactfactory.tp2tdd.models;
 
-public class Planet {
+public class Fusee {
   String name;
 
   public String getName() {

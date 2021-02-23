@@ -1,6 +1,6 @@
-package com.tactfactory.tp2tdd;
+package com.tactfactory.tp2tdd.models;
 
-public class Fusee {
+public class Launchpad {
   String name;
 
   public String getName() {
@@ -10,5 +10,4 @@ public class Fusee {
   public void setName(String name) {
     this.name = name;
   }
-
 }
